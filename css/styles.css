@@ -4,7 +4,7 @@ body{
 
 .content{
   background-color: #EEBCAB;
-  height: 1000px;
+  height: 850px;
   width: 90%;
   padding-left: 2.5%;
   padding-right: 2.5%;
@@ -49,4 +49,10 @@ p{
 
 h2{
   text-align: center;
+}
+
+h3{
+  text-align: center;
+  font-style: italic;
+  font-family:monospace;
 }
