@@ -6,10 +6,8 @@ body{
   background-color: #EEBCAB;
   height: 850px;
   width: 90%;
-  padding-left: 2.5%;
-  padding-right: 2.5%;
-  margin-left: 2.5%;
-  margin-right: 2.5%;
+  padding: 25px;
+  margin:auto;
   border-radius: 25px;
 }
 
@@ -18,22 +16,22 @@ body{
   text-align: center;
 }
 
+.animal {
+  float: left;
+}
 .uggie{
-  float:left;
   width:33%;
   background-color:#00B28A;
   border-radius: 25px 0 0 25px;
 
 }
 .lucky{
-  float:left;
   width:33%;
   background-color:#19FFCB;
 }
 .snape{
-  float:left;
   width:33%;
-  background-color:#00B28A;
+  background-color: blue;
   border-radius: 0 25px 25px 0;
 }
 
@@ -55,4 +53,52 @@ h3{
   text-align: center;
   font-style: italic;
   font-family:monospace;
+}
+
+/* Desktops to Tablets */
+
+@media only screen and (min-width:1000px) {
+  .content {
+    width:950px;
+  }
+}
+
+@media only screen and (max-width:949px) {
+
+  .animal{
+    float:none;
+    width:auto;
+    border-radius: 25px;
+  }
+
+  .uggie {
+    float:left;
+    width: 45%;
+    margin: 2.5%;
+  }
+  .lucky {
+    float:right;
+    width: 45%;
+    margin: 2.5%;
+  }
+
+  .snape {
+    float:left;
+    width: 90%;
+    margin:auto;
+  }
+  .content{
+    height:auto;
+  }
+}
+
+/* Tablets to Phones */
+
+@media only screen and (max-width: 480px) {
+  .animal{
+    float:none;
+    width:auto;
+    border-radius: 25px;
+  }
+
 }
